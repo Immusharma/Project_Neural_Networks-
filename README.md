@@ -1,4 +1,4 @@
-**# Neural Networks in the Publishing Industry: Boosting Customer Experience and Sales**
+# Neural Networks in the Publishing Industry: Boosting Customer Experience and Sales
 
 **### Objective**
 
