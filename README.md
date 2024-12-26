@@ -1,4 +1,4 @@
-#####Neural Networks in the Publishing Industry: Boosting Customer Experience and Sales
+###Neural Networks in the Publishing Industry: Boosting Customer Experience and Sales
 
 ###Objective
 
@@ -22,7 +22,7 @@ Seaborn: A visualization library for creating statistical graphics.
 
 Matplotlib.pyplot: To create detailed visualizations and plots.
 
-####Approach
+###Approach
 
 ###Data Processing:
 
