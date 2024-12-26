@@ -57,9 +57,11 @@ step 2: Order Frequency: Customers with fewer orders are more likely to churn.
 step 3: Temporal Patterns: Churn behavior is evenly distributed across different years.
 
 
-Streamlit Link :
 
-Linkedin Post Link : 
+## Streamlit Link :
+
+## Linkedin Post Link : 
+
 
 
 ## Requirements:
