@@ -58,9 +58,9 @@ step 3: Temporal Patterns: Churn behavior is evenly distributed across different
 
 
 
-## Streamlit Link :
+### Streamlit Link :
 
-## Linkedin Post Link : 
+### Linkedin Post Link : 
 
 
 
