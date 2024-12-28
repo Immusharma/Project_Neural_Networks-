@@ -24,7 +24,7 @@ def add_background_image(image_file):
     except FileNotFoundError:
         st.error("Background image file not found. Please check the path.")
 
-# Add your background image (replace with your actual image file path)
+# Add your background image
 add_background_image('D:\\GUVI\\IITMDSA MDT34, MDT35,& MDT36\\python\\churnn.jpg')
 
 # Rest of your code follows...
