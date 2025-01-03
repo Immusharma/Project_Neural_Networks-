@@ -5,7 +5,7 @@ import numpy as np
 from tensorflow.keras.models import load_model
 import base64
 
-# Function to set a background image
+# Function for background image
 def add_background_image(image_file):
     try:
         with open(image_file, "rb") as img_file:
