@@ -26,47 +26,43 @@ def add_background_image(image_file):
 
 # Sidebar navigation
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", ["Home", "Customer Churn Prediction"])
+page = st.sidebar.radio("Go to", ["Dashboard", "Customer Retention Analysis"])
 
-# Home Page
-if page == 'Home':
-    st.title('BOOKSTORE - CUSTOMER CHURN PREDICTION 📚')
-    st.subheader("Data has been processed from the publishing industry using ANN Deep Learning")
-    st.markdown("*You can predict customer churn on the next page* 😎")
+# Dashboard
+if page == 'Dashboard':
+    st.markdown("<h1 style='color:#1877F2; font-weight:bold;'>SMART BOOKSTORE - CUSTOMER CHURN PREDICTION 📈📖</h1>", unsafe_allow_html=True)
+    st.subheader("Publishing industry data analyzed using advanced ANN Deep Learning techniques")
+    st.markdown("<p style='color:darkred; font-weight:bold;'>*Dive into customer churn predictions ahead* 😎</p>", unsafe_allow_html=True)
     st.image("iStock.jpg")  
 
-    # Add text below the image
-    st.subheader("Data Processed from the Publishing Industry")
+    # below the image text
+    st.subheader("Publishing Industry Data Transformed into Insights")
     st.markdown("""
-    - This application leverages Artificial Neural Networks (ANN) for customer churn prediction.
-    - It provides insights into customer behavior and retention strategies.
-    - Use the prediction feature on the next page to identify potential churn customers.
-    """)
-# Customer Churn Prediction Page
-elif page == 'Customer Churn Prediction':
-    # Set a background image for the churn prediction page
+    - This app uses AI (ANN) to predict if customers might stop buying..
+    - It helps understand customer habits and how to keep them coming back.
+    - Go to the next page to find out which customers may leave.""")
+    
+# Retention Analysis Page
+elif page == 'Customer Retention Analysis':
+    
+    # background image
     add_background_image("churnn.jpg")
 
-    st.title("CHURN PREDICTION")
-
-    # Input number fields instead of sliders
-    p1 = st.number_input("**Enter how many days has the customer been buying books:**", min_value=0, max_value=1200, value=0)
-    p2 = st.number_input("**Enter how many days has the customer not returned to the shop:**", min_value=0, max_value=1200, value=0)
-
-    # Date input
-    selected_date = st.date_input("Select an order date")
+    st.markdown('<h1 style="color:darkred; font-style: italic;">CHURN PREDICTION</h1>',unsafe_allow_html=True)
+    # Inputs of sliders
+    p1 = st.number_input("**Enter the total number of days the customer has been with your shop:**", min_value=0, max_value=1200, value=0)
+    p2 = st.number_input("**Enter the number of days since the customer last visited:**", min_value=0, max_value=1200, value=0)
+    selected_date = st.date_input("Select the date of the customer's last order")
     if selected_date:
         p3 = selected_date.day
         p4 = selected_date.month
         p5 = selected_date.year
+    p6 = st.number_input("**Enter the price of the last book purchased:**", min_value=0, max_value=500, value=0)
+    p7 = st.number_input("**Enter the total number of times the customer has placed an order:**", min_value=0, max_value=500, value=8)
 
-    # Additional inputs with number input
-    p6 = st.number_input("**Enter the price of the book bought:**", min_value=0, max_value=500, value=0)
-    p7 = st.number_input("**Enter how many times the customer has ordered from your shop:**", min_value=0, max_value=500, value=8)
-
-    # Load the pre-trained model
+    # Load pre-trained model
     try:
-        model = load_model('D:\GUVI\IITMDSA MDT34, MDT35,& MDT36\python\Project_Neural_Networks-\model.h5')
+        model = load_model("model.h5")
     except Exception as e:
         st.error(f"Error loading the model: {e}")
         model = None
