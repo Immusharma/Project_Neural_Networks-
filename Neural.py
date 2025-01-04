@@ -33,7 +33,7 @@ if page == 'Home':
     st.title('BOOKSTORE - CUSTOMER CHURN PREDICTION 📚')
     st.subheader("Data has been processed from the publishing industry using ANN Deep Learning")
     st.markdown("*You can predict customer churn on the next page* 😎")
-    st.image("D:\GUVI\IITMDSA MDT34, MDT35,& MDT36\python\Project_Neural_Networks-\iStock.jpg")  
+    st.image("iStock.jpg")  
 
     # Add text below the image
     st.subheader("Data Processed from the Publishing Industry")
@@ -45,7 +45,7 @@ if page == 'Home':
 # Customer Churn Prediction Page
 elif page == 'Customer Churn Prediction':
     # Set a background image for the churn prediction page
-    add_background_image('D:\GUVI\IITMDSA MDT34, MDT35,& MDT36\python\Project_Neural_Networks-\churnn.jpg')
+    add_background_image("churnn.jpg")
 
     st.title("CHURN PREDICTION")
 
